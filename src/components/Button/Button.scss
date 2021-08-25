@@ -1,0 +1,17 @@
+@import '../../fonts/fonts.scss';
+
+.ok-button {
+    display: flex;
+    justify-content: center;
+    button {
+        cursor: pointer;
+        width: 171px;
+        height: 49px;
+        background: #2196F3;
+        border-radius: 20px;
+        border: none;
+        font-size: 24px;
+        font-family: 'Roboto-Bold';
+        color: #fff;  
+    }
+}

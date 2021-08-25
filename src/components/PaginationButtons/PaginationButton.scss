@@ -1,0 +1,29 @@
+@import '../../fonts/fonts.scss';
+
+.pagination {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding-left: 0;
+  .page-item {
+    border: 1px solid #000000;
+    border-radius: 4px;
+   
+  }
+  .page-link {
+    color: white;
+    font-family: 'Roboto-Bold';
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    display: block;
+  }
+}
+
+.active-page {
+    background: #6cc595;
+  }
+
+.default {
+    background: #0676aa;
+}

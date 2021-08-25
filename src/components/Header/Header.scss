@@ -1,0 +1,25 @@
+@import '../../fonts/fonts.scss';
+
+$fontR_B: 'Roboto-Bold';
+
+
+
+.flex-box-header {
+    display: flex;
+    .header-logo {
+        flex: 0 0 600px;
+        h1 {
+            font-family: $fontR_B;
+            font-size: 72px;
+            text-align: left;
+            color: #000000;
+        }
+        div {
+                display: flex; 
+            }
+        div > div + div {
+            flex: 1 1 0;
+            align-self: center;
+        }
+    }  
+}

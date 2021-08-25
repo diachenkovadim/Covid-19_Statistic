@@ -1,0 +1,53 @@
+@import '../../fonts/fonts.scss';
+
+$colorWhite: #fff;
+$colorGrey: #b2b2b2;
+
+$fontR_B: 'Roboto-Bold';
+$fontR: 'Roboto';
+
+$borderRd20: 20px;
+$fontSz24: 24px;
+
+$widthS: 78 / 1200 * 100%;
+$widthL: 570 / 1200 * 100%;
+$widthM: 550 / 1200 * 100%;
+
+.flex-box-country-statistic, .flex-box-table-header {
+    display: flex;
+    cursor: pointer;
+    background: $colorWhite;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: $borderRd20;
+    font-size: $fontSz24;
+    color: #000000;
+    margin-bottom: 20px;
+    font-family: $fontR_B;
+    & div {
+        flex: 0 0 $widthS;
+        border-right: 1px solid $colorGrey;
+        padding: 26px 5px 26px 30px;
+        box-sizing: border-box; 
+    }
+    & div + div {
+        flex: 0 0 $widthL;
+        padding-left: 23px;
+    }
+    
+    & div + div + div {
+        flex: 0 0 $widthM;
+        border-right: none;
+    }   
+}
+
+.flex-box-table-header {
+    background: #2196F3;
+    cursor: none;
+    color: $colorWhite;
+}
+
+.noReults {
+    padding: 20px;
+    font-size: $fontSz24;
+    text-align: center;
+}

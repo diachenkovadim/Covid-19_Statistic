@@ -1,0 +1,42 @@
+$colorWhite: #fff;
+$colorGrey: #b2b2b2;
+
+$fontR_B: 'Roboto-Bold';
+$fontR: 'Roboto';
+
+$borderRd20: 20px;
+$fontSz24: 24px;
+
+$widthS: 78 / 1200 * 100%;
+$widthL: 570 / 1200 * 100%;
+$widthM: 550 / 1200 * 100%;
+
+.header-search {
+    flex: 1 1 0;
+    text-align: right;
+    align-self: center;
+    input[type="text"]{
+        background: $colorWhite;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        width: 600px;
+        height: 80px;
+        font-size: 48px;
+        padding: 12px 58px 12px 32px;
+        box-sizing: border-box;
+        background-image: url('../../images/vector.svg');
+        background-position: 546px 25px;
+        background-repeat: no-repeat;
+        outline: none;
+        border: none;
+        }
+      
+    ::-webkit-input-placeholder{
+        color: $colorGrey;
+        transition: all .8s ease;
+        font-family: $fontR;       
+    }    
+    :focus::-webkit-input-placeholder {
+        color: transparent;
+    }
+}

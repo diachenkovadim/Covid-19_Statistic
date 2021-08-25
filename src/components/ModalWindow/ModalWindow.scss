@@ -1,0 +1,87 @@
+@import '../../fonts/fonts.scss';
+
+$colorWhite: #fff;
+$colorGrey: #666;
+
+$fontR_B: 'Roboto-Bold';
+$fontR: 'Roboto';
+
+.modal {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    .modal-content {
+        padding: 20px;
+        background: $colorWhite;
+        border-radius: 20px;
+        width: 600px;
+        p {
+            text-align: center;
+            font-size: 48px;
+            font-family: $fontR_B;
+            margin-bottom: 38px;
+        }
+        .content-list li {
+            display: flex;
+            font-family: $fontR;
+            font-size: 24px;
+            color: $colorGrey;
+            margin-bottom: 48px;
+            position: relative;
+            padding-left: 59px;
+            &::before {
+                content: "";
+                top: 0;
+                left: 0;
+                width: 30px; height: 28px;
+                background: url('../../images/css_sprites.png') -10px -10px;
+                position: absolute;
+            }
+            &+li::before {
+                content: "";
+                top: 0;
+                left: 0;
+                width: 30px; height: 30px;
+                background: url('../../images/css_sprites.png') -10px -58px;
+                position: absolute;
+            }
+            &+li+li::before {
+                content: "";
+                top: 0;
+                left: 0;
+                width: 23px; height: 30px;
+                background: url('../../images/css_sprites.png') -10px -108px;
+                position: absolute;
+            }
+            &+li+li {
+                margin-bottom: 36px; 
+            }
+            span {
+                flex: 0 0 80%; 
+            }
+            & span + span {
+                flex: 1 1 0;
+                text-align: right; 
+                box-sizing: border-box; 
+            }
+        }
+    }     
+}
+
+.modal.active {
+        opacity: 1;
+        pointer-events: all;
+        
+}
+
+
+
+
